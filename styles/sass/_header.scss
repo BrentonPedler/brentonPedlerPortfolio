@@ -1,0 +1,38 @@
+header {
+    background-color: $primaryDark;
+    color: $primaryLight;
+    height: 100vh;
+    @include centerFlex();
+    div {
+        @include centerFlex(); 
+        flex-direction: column;
+    }   h2 {
+            @include primaryFont();
+            font-size: 2.5rem;
+        }   h1 {
+                @include primaryFont();
+                font-size: 4rem;
+                padding: 30px;
+            }      
+}
+
+header p {
+    @include secondaryFont();
+    font-size: 1.6rem;
+}
+
+header button {
+    @include secondaryFont();
+    background-color: $primaryLight;
+    font-size: 1.6rem;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: $primaryOrange;
+    cursor: pointer;
+}

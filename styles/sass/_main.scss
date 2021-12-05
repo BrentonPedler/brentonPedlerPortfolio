@@ -1,0 +1,113 @@
+// TOP NAVIGATION
+
+.topNav {
+    background-color: $primaryLight;
+    color: $primaryDark;
+    @include primaryFont();
+    
+    .navFlex {
+       @include centerFlex();
+       justify-content: space-between;
+       font-size: 3rem;
+       padding: 30px 0px;
+    }   
+        ul {
+            @include centerFlex();
+    
+        }   
+            a {
+            font-size: 1.75rem;
+            padding: 20px;
+            } 
+                a:hover {
+                color: $primaryRed;
+                transition: .5s;
+                }   
+}
+
+// ABOUT ME
+
+.aboutMe {
+    background-color: $primaryLight;
+    color: $primaryDark;
+    padding: 100px;
+
+        .aboutMeFlex {
+            @include centerFlex;
+        }
+                img {
+                width: 350px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 5px;
+                }
+}
+
+.aboutMeBox {
+    margin-left: 40px;
+    width: 50%;
+
+    h2 {
+        @include primaryFont;
+        font-size: 4rem;
+    }
+        h3 {
+            @include primaryFont;
+            font-size: 2.25rem;
+            padding: 40px 0px;
+        }
+            p {
+                @include secondaryFont;
+                font-size: 1.8rem;  
+                line-height: 2.5rem;    
+            }
+}
+
+.resume {
+    @include secondaryFont();
+    background-color: $primaryDark;
+    color: $primaryLight;
+    font-size: 1.6rem;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.resume:hover {
+    background-color: $primaryOrange;
+    color: $primaryDark;
+    cursor: pointer;
+}
+
+// SKILLS
+
+.skills {
+    background-color: $primaryLight;
+    color: $primaryDark;
+    
+        h2 {
+            @include primaryFont;
+            font-size: 3.25rem;
+            text-align: center;
+            padding: 50px;    
+        }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+            }
+                i {
+                    font-size: 7rem;
+                    padding: 50px 0px;
+                }
+}
+
+// PORTFOLIO
+
+.portfolio {
+    background-color: $primaryLight;
+    color: $primaryDark;
+}

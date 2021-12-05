@@ -1,0 +1,33 @@
+//  VARIABLES
+
+// FONTS
+$primaryFont: 'Nunito', sans-serif;
+$secondaryFont: 'Bree Serif', serif;
+
+// COLORS
+$primaryDark: #000000;
+$primaryOrange: #F58840;
+$primaryRed: #B85252;
+$primaryLight: #F7F7F7;
+
+// MIXINS
+@mixin fontSize() {
+    font-size: (sizeValue/10) * 1rem;
+}
+
+@mixin primaryFont() {
+    font-family: $primaryFont;
+    letter-spacing: 4px;
+}
+
+@mixin secondaryFont() {
+    font-family: $secondaryFont;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+@mixin centerFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
