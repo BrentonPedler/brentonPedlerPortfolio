@@ -265,11 +265,12 @@ img {
 
 header {
   background-color: #000000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 30, 33, 0.52)), to(rgba(24, 17, 22, 0.73))), url("../assets/Brenton_4copy.jpg");
-  background-image: linear-gradient(to bottom, rgba(29, 30, 33, 0.52), rgba(24, 17, 22, 0.73)), url("../assets/Brenton_4copy.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 30, 31, 0.52)), to(rgba(33, 32, 33, 0.73))), url("../assets/Brenton_4copy.jpg");
+  background-image: linear-gradient(to bottom, rgba(29, 30, 31, 0.52), rgba(33, 32, 33, 0.73)), url("../assets/Brenton_4copy.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #F7F7F7;
   height: 100vh;
   display: -webkit-box;
@@ -340,6 +341,12 @@ header button:hover {
   color: #000000;
   font-family: "Nunito", sans-serif;
   letter-spacing: 4px;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+  border-bottom: 1px solid #ffffffbb;
+  -webkit-box-shadow: 0px 15px 10px -15px #111;
+          box-shadow: 0px 15px 10px -15px #111;
 }
 .topNav .navFlex {
   display: -webkit-box;
@@ -457,11 +464,16 @@ header button:hover {
   text-align: center;
   padding: 50px;
 }
+.skills h2 span {
+  border-bottom: 2px solid #B85252;
+}
 .skills ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
+  margin: 0 auto;
+  width: 60%;
 }
 .skills i {
   font-size: 7rem;
@@ -472,6 +484,16 @@ header button:hover {
   background-color: #F7F7F7;
   color: #000000;
   padding: 50px 0px;
+}
+.portfolio h2 {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 4px;
+  font-size: 3.25rem;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.portfolio h2 span {
+  border-bottom: 2px solid #B85252;
 }
 
 .projectBox {

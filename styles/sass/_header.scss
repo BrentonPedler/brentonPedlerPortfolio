@@ -1,9 +1,10 @@
 header {
     background-color: $primaryDark;
-    background-image: linear-gradient(to bottom, rgba(29, 30, 33, 0.52), rgba(24, 17, 22, 0.73)), url("../assets/Brenton_4copy.jpg");
+    background-image: linear-gradient(to bottom, rgba(29, 30, 31, 0.52), rgba(33, 32, 33, 0.73)), url("../assets/Brenton_4copy.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: $primaryLight;
     height: 100vh;
     @include centerFlex();
