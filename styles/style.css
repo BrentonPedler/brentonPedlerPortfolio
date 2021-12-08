@@ -456,6 +456,9 @@ header button:hover {
 .skills {
   background-color: #F7F7F7;
   color: #000000;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 4px;
+  font-size: 2rem;
 }
 .skills h2 {
   font-family: "Nunito", sans-serif;
@@ -478,6 +481,50 @@ header button:hover {
 .skills i {
   font-size: 7rem;
   padding: 50px 0px;
+}
+
+.skillItem {
+  margin: 0 auto;
+  position: relative;
+}
+
+.skillItem .front {
+  top: 0;
+  z-index: 900;
+  -webkit-transform: rotate(0deg) rotateX(0deg);
+          transform: rotate(0deg) rotateX(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.skillItem.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.skillItem .back {
+  position: absolute;
+  top: 0;
+  z-index: 800;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.skillItem.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+          transform: rotateX(0deg) rotateY(0deg);
 }
 
 .portfolio {

@@ -93,6 +93,8 @@
 .skills {
     background-color: $primaryLight;
     color: $primaryDark;
+    @include primaryFont();
+    font-size: 2rem;
     
         h2 {
             @include primaryFont;
@@ -114,8 +116,44 @@
                 i {
                     font-size: 7rem;
                     padding: 50px 0px;
+                    
                 }
 }
+
+.skillItem {
+    margin: 0 auto;
+    position: relative;
+    }
+    
+    .skillItem .front {
+    // position: absolute;
+    top: 0;
+    z-index: 900;
+    transform: rotate(0deg) rotateX(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .4s ease-in-out;
+    }
+    
+    .skillItem.flip .front{
+    z-index: 900;
+    transform: rotateX(180deg);
+    }
+    
+    .skillItem .back{
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    transform: rotateX(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .3s ease-in-out;
+    }
+    
+    .skillItem.flip .back{
+    z-index: 1000;
+    transform: rotateX(0deg) rotateY(0deg);
+    }
 
 // PORTFOLIO
 
