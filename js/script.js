@@ -26,3 +26,12 @@ skillItem.addEventListener('mouseout', () => {
 skillItem.classList.remove('flip');
 })
 });
+
+// JQUERY - SCROLL EFFECT
+
+$(".portfolioLink").click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#portfolio").offset().top
+  }, 2000);
+});
+

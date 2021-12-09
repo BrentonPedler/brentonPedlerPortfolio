@@ -531,6 +531,7 @@ header button:hover {
   z-index: 1000;
   -webkit-transform: rotateX(0deg) rotateY(0deg);
           transform: rotateX(0deg) rotateY(0deg);
+  text-align: center;
 }
 
 .portfolio {
@@ -959,11 +960,11 @@ form button {
   footer {
     font-size: 1rem;
   }
-}
-.projectInfo {
-  width: 100%;
-}
 
+  .projectInfo {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .skills ul {
     grid-template-columns: repeat(1, 1fr);
