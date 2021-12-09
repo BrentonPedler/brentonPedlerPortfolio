@@ -32,6 +32,6 @@ skillItem.classList.remove('flip');
 $(".portfolioLink").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#portfolio").offset().top
-  }, 2000);
+  }, 3500);
 });
 

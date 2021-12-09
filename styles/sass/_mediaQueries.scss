@@ -12,13 +12,14 @@
             
         }
     }
+    form button {
+        padding: 10px 30px;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
 }
 
-form button {
-    padding: 10px 30px;
-    margin-top: 5%;
-    margin-left: 10%;
-}
+
 
 @media (max-width: 1200px) {
     .skills {
@@ -206,8 +207,6 @@ form button {
     }
     
 }
-
-
 
 @media (max-width: 500px) {
     .skills {

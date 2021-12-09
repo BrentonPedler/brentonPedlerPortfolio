@@ -715,7 +715,7 @@ form button {
   font-size: 1.6rem;
   padding: 10px 30px;
   border: none;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 50px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -788,13 +788,13 @@ footer {
     width: 80%;
     height: 60%;
   }
-}
-form button {
-  padding: 10px 30px;
-  margin-top: 5%;
-  margin-left: 10%;
-}
 
+  form button {
+    padding: 10px 30px;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+}
 @media (max-width: 1200px) {
   .skills ul {
     width: 80%;
