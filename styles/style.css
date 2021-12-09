@@ -697,8 +697,8 @@ header button:hover {
   border: none;
   resize: none;
   margin-left: 50px;
-  width: 300px;
-  height: 200px;
+  width: 85%;
+  height: 60%;
   padding: 15px 5px;
   background-color: #F7F7F7;
   font-family: "Nunito", sans-serif;
@@ -775,14 +775,28 @@ footer {
   margin-top: 10px;
 }
 
+@media (max-width: 1250px) {
+  .contactFlex form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFlex form textarea {
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+  }
+}
+form button {
+  padding: 10px 30px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
 @media (max-width: 1200px) {
   .skills ul {
     width: 80%;
-  }
-}
-@media (max-width: 1000px) {
-  .skills ul {
-    width: 100%;
   }
 }
 @media (max-width: 1095px) {
@@ -805,6 +819,30 @@ footer {
 
   .projectInfo {
     width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .skills ul {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 100px 0px;
+  }
+
+  .contactTitle {
+    text-align: center;
+  }
+
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contactLinks {
+    margin: 20px 0px;
   }
 }
 @media (max-width: 968px) {
@@ -877,6 +915,24 @@ footer {
   header h1 {
     padding: 30px 0px;
   }
+
+  .projectBox {
+    padding: 50px 0px;
+  }
+
+  .projectInfo {
+    width: 80%;
+    margin: 25px 0px;
+  }
+
+  .contactFlex form {
+    width: 100%;
+  }
+}
+@media (max-width: 659px) {
+  footer {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 642px) {
   header h1 {
@@ -894,6 +950,20 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 550px) {
+  .projectBox .previewBox {
+    width: 400px;
+    height: 300px;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+.projectInfo {
+  width: 100%;
+}
+
 @media (max-width: 500px) {
   .skills ul {
     grid-template-columns: repeat(1, 1fr);
@@ -903,13 +973,32 @@ footer {
     font-size: 10rem;
   }
 }
+@media (max-width: 435px) {
+  .projectBox .previewBox {
+    width: 300px;
+    height: 275px;
+  }
+
+  .contactFlex form {
+    padding: 5px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
 @media (max-width: 400px) {
   .aboutMe img {
     width: 300px;
     height: 425px;
   }
 }
-@media (max-width: 371px) {
+@media (max-width: 385px) {
+  .projectInfo .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 375px) {
   header h1 {
     font-size: 3rem;
   }
@@ -919,6 +1008,37 @@ footer {
   }
 
   header p {
+    font-size: 1.2rem;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+
+  .contactLinks {
+    margin-left: 0px;
+  }
+  .contactLinks li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contactLinks i {
+    font-size: 4rem;
+    margin: 30px 0px;
+  }
+  .contactLinks a:hover {
+    color: #F58840;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .contactLinks div {
+    margin-left: 0px;
     font-size: 1.2rem;
   }
 }
