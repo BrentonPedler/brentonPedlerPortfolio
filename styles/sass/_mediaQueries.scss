@@ -1,0 +1,174 @@
+@media (max-width: 1200px) {
+    .skills {
+
+        ul {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .skills {
+
+        ul {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1095px) {
+    .aboutMeFlex {
+        flex-direction: column;
+
+        .aboutMeBox {
+            width: 100%;
+            text-align: center;
+            margin: 35px 0px;
+
+        }
+    }
+    .previewBox{
+        width: 400px;
+        height: 300px;
+    }
+    .projectInfo {
+        width: 60%;
+    }
+}
+
+@media (max-width: 968px) {
+    
+    .projectBox {
+        flex-direction: column;
+        padding: 25px;
+        
+        .order {
+            order: 1;
+
+            .orderTwo {
+                order: -1;
+            }
+        }
+
+
+    }
+    .projectInfo {
+        text-align: center;
+
+        .tools {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 815px) {
+    .navFlex {
+        
+        .fa-bars {
+            display: inline-block;
+            font-size: 5rem;
+        }   ul {
+            display: none;
+        }
+    }
+
+    .navFlex:hover, .navFlex:focus {
+
+        .fa-bars {
+            display: inline-block;
+            font-size: 5rem;
+            position: relative;
+
+        }   ul {
+            display: inline-block;
+            position: absolute;
+            overflow: hidden;
+            text-align: center;
+            right: 50px;
+            top: 90px;
+
+            }   li {
+                background-color: $primaryDark;
+                padding: 10px;
+                color: $primaryLight;
+
+                }   li:hover, li:focus {
+                    background-color: $primaryOrange;
+                    
+                        a:hover, a:focus {
+                            color: $primaryLight;
+                        }
+                    
+                    }         
+
+    }
+}
+
+@media (max-width: 775px) {
+    .skills {
+
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 709px) {
+    header h1 {
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 642px) {
+    header h1 {
+        text-align: center;
+    }
+    header p {
+        text-align: center;
+    }
+    .aboutMe {
+        padding: 100px 25px;
+
+        .wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .skills {
+
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+
+                i {
+                    font-size: 10rem;
+                }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .aboutMe {
+
+        img {
+            width: 300px;
+            height: 425px;
+        }
+    }
+}
+
+@media (max-width: 371px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 1.75rem;
+    }
+    header p {
+       font-size: 1.2rem; 
+    }
+}
+

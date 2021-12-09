@@ -385,6 +385,10 @@ header button:hover {
   transition: 0.5s;
 }
 
+.fa-bars {
+  display: none;
+}
+
 .aboutMe {
   background-color: #F7F7F7;
   color: #000000;
@@ -407,6 +411,8 @@ header button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  -webkit-filter: opacity(70%) grayscale(50%);
+          filter: opacity(70%) grayscale(50%);
 }
 
 .aboutMeBox {
@@ -509,7 +515,7 @@ header button:hover {
 
 .skillItem .back {
   position: absolute;
-  top: 0;
+  top: 75px;
   z-index: 800;
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
@@ -610,8 +616,10 @@ header button:hover {
   font-size: 2rem;
   margin: 20px 0px;
 }
-.links .links:hover {
+.links a:hover {
   color: #B85252;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contact {
@@ -735,6 +743,11 @@ form button:hover {
   font-size: 4rem;
   margin: 30px 0px;
 }
+.contactLinks a:hover {
+  color: #F58840;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 .contactLinks div {
   margin-left: 25px;
   font-size: 1.2rem;
@@ -760,4 +773,152 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .skills ul {
+    width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  .skills ul {
+    width: 100%;
+  }
+}
+@media (max-width: 1095px) {
+  .aboutMeFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMeFlex .aboutMeBox {
+    width: 100%;
+    text-align: center;
+    margin: 35px 0px;
+  }
+
+  .previewBox {
+    width: 400px;
+    height: 300px;
+  }
+
+  .projectInfo {
+    width: 60%;
+  }
+}
+@media (max-width: 968px) {
+  .projectBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px;
+  }
+  .projectBox .order {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .projectBox .order .orderTwo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .projectInfo {
+    text-align: center;
+  }
+  .projectInfo .tools {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 815px) {
+  .navFlex .fa-bars {
+    display: inline-block;
+    font-size: 5rem;
+  }
+  .navFlex ul {
+    display: none;
+  }
+
+  .navFlex:hover .fa-bars, .navFlex:focus .fa-bars {
+    display: inline-block;
+    font-size: 5rem;
+    position: relative;
+  }
+  .navFlex:hover ul, .navFlex:focus ul {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    right: 50px;
+    top: 90px;
+  }
+  .navFlex:hover li, .navFlex:focus li {
+    background-color: #000000;
+    padding: 10px;
+    color: #F7F7F7;
+  }
+  .navFlex:hover li:hover, .navFlex:hover li:focus, .navFlex:focus li:hover, .navFlex:focus li:focus {
+    background-color: #F58840;
+  }
+  .navFlex:hover li:hover a:hover, .navFlex:hover li:hover a:focus, .navFlex:hover li:focus a:hover, .navFlex:hover li:focus a:focus, .navFlex:focus li:hover a:hover, .navFlex:focus li:hover a:focus, .navFlex:focus li:focus a:hover, .navFlex:focus li:focus a:focus {
+    color: #F7F7F7;
+  }
+}
+@media (max-width: 775px) {
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 709px) {
+  header h1 {
+    padding: 30px 0px;
+  }
+}
+@media (max-width: 642px) {
+  header h1 {
+    text-align: center;
+  }
+
+  header p {
+    text-align: center;
+  }
+
+  .aboutMe {
+    padding: 100px 25px;
+  }
+  .aboutMe .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .skills ul {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .skills ul i {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 400px) {
+  .aboutMe img {
+    width: 300px;
+    height: 425px;
+  }
+}
+@media (max-width: 371px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header h2 {
+    font-size: 1.75rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
 }
