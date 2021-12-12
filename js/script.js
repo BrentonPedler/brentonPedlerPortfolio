@@ -37,19 +37,28 @@ $(".portfolioLink").click(function() {
 
 // CLICK EVENT FOR HAMBURGER MENU
 
-const menuDropdown = document.querySelector('.fa-bars');
+// const menuDropdown = document.querySelector('.fa-bars');
 
-let menuOpen = false;
+// let menuOpen = false;
 
-menuDropdown.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuDropdown.classList.add('open'); 
-    menuOpen = true;
+// menuDropdown.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     menuDropdown.classList.add('open'); 
+//     menuOpen = true;
+//   } else {
+//     menuDropdown.classList.remove('open');
+//     menuOpen = false;
+//   }
+// })
+
+const toggleMenu = () => {
+  const menu = document.querySelector('.fa-bars');
+
+  if (menu.style.display == "block") {
+    menu.style.display = "none";
   } else {
-    menuDropdown.classList.remove('open');
-    menuOpen = false;
+    menu.style.display = "block";
   }
-})
-
+}
 
 
