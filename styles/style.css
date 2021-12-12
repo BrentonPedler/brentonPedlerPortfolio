@@ -242,6 +242,7 @@ body, ul, h1, h2, h3, p, a, i {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -387,6 +388,31 @@ header button:hover {
 
 .fa-bars {
   display: none;
+}
+
+.fa-bars.open {
+  display: inline-block;
+  font-size: 5rem;
+  position: relative;
+}
+.fa-bars.open ul {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  right: 50px;
+  top: 90px;
+}
+.fa-bars.open li {
+  background-color: #000000;
+  padding: 10px;
+  color: #F7F7F7;
+}
+.fa-bars.open li:hover, .fa-bars.open li:focus {
+  background-color: #F58840;
+}
+.fa-bars.open li:hover a:hover, .fa-bars.open li:hover a:focus, .fa-bars.open li:focus a:hover, .fa-bars.open li:focus a:focus {
+  color: #F7F7F7;
 }
 
 .aboutMe {

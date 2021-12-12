@@ -35,3 +35,18 @@ $(".portfolioLink").click(function() {
   }, 3500);
 });
 
+// CLICK EVENT FOR HAMBURGER MENU
+
+const menuDropdown = document.querySelector('.fa-bars');
+
+let menuOpen = false;
+
+menuDropdown.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuDropdown.classList.add('open'); 
+    menuOpen = true;
+  } else {
+    menuDropdown.classList.remove('open');
+    menuOpen = false;
+  }
+})

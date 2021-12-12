@@ -36,6 +36,34 @@
     display: none;
 }
 
+.fa-bars.open {
+        display: inline-block;
+        font-size: 5rem;
+        position: relative;
+
+        ul {
+        display: inline-block;
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        right: 50px;
+        top: 90px;
+
+        }   li {
+            background-color: $primaryDark;
+            padding: 10px;
+            color: $primaryLight;
+
+            }   li:hover, li:focus {
+                background-color: $primaryOrange;
+                
+                    a:hover, a:focus {
+                        color: $primaryLight;
+                    }
+                
+                }
+}
+
 // ABOUT ME
 
 .aboutMe {
