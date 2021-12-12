@@ -40,9 +40,9 @@ $(".portfolioLink").click(function() {
 const menuDropdown = document.querySelector('.fa-bars');
 
 menuDropdown.addEventListener('click', () => {
-  menuDropdown.classList.add('open');
+  menuDropdown.classList.toggle('open');
 })
 
-menuDropdown.addEventListener('click', () => {
-    menuDropdown.classList.remove('open');
-})
+// menuDropdown.addEventListener('click', () => {
+//     menuDropdown.classList.remove('open');
+// })
