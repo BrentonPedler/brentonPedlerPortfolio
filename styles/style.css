@@ -415,6 +415,10 @@ header button:hover {
   color: #F7F7F7;
 }
 
+.fa-bars.close {
+  display: none;
+}
+
 .aboutMe {
   background-color: #F7F7F7;
   color: #000000;
