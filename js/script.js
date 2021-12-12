@@ -47,6 +47,7 @@ menuDropdown.addEventListener('click', () => {
     menuOpen = true;
   } else {
     menuDropdown.classList.remove('open');
+    menuDropdown.classList.add('close');
     menuOpen = false;
   }
 })
