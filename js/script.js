@@ -39,18 +39,10 @@ $(".portfolioLink").click(function() {
 
 const menuDropdown = document.querySelector('.fa-bars');
 
-let menuOpen = false;
-
 menuDropdown.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuDropdown.classList.add('open'); 
-    menuOpen = true;
-  }
+  menuDropdown.classList.add('open');
 })
 
 menuDropdown.addEventListener('click', () => {
-  if(menuOpen) {
     menuDropdown.classList.remove('open');
-    menuOpen = false;
-  }
 })
