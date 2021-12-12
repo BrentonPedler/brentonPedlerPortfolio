@@ -38,11 +38,12 @@ $(".portfolioLink").click(function() {
 // CLICK EVENT FOR HAMBURGER MENU
 
 const menuDropdown = document.querySelector('.fa-bars');
+const menuDropdownClose = document.querySelector('.fa-bars a')
 
 menuDropdown.addEventListener('click', () => {
-  menuDropdown.classList.toggle('open');
+  menuDropdown.classList.add('open');
 })
 
-// menuDropdown.addEventListener('click', () => {
-//     menuDropdown.classList.remove('open');
-// })
+menuDropdown.addEventListener('click', () => {
+    menuDropdownClose.classList.remove('open');
+})
