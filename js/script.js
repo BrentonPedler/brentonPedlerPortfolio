@@ -50,7 +50,9 @@ menuDropdown.addEventListener('click', () => {
 })
 
 menuDropdown.addEventListener('click', () => {
+  if (menuOpen) {
     menuItems.classList.remove('open');
     menuOpen = false;
+  }
 })
 
