@@ -51,5 +51,6 @@ menuDropdown.addEventListener('click', () => {
 
 menuDropdown.addEventListener('click', () => {
     menuItems.classList.remove('open');
+    menuOpen = false;
 })
 
