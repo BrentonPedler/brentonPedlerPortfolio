@@ -46,7 +46,7 @@ menuDropdown.addEventListener('click', () => {
     menuDropdown.classList.add('open'); 
     menuOpen = true;
   } else {
-    menuDropdown.classList.remove('open').add('.fa-bars');
+    menuDropdown.classList.remove('open');
     menuOpen = false;
   }
 })
