@@ -45,12 +45,14 @@ menuDropdown.addEventListener('click', () => {
   if (!menuOpen) {
     menuDropdown.classList.add('open'); 
     menuOpen = true;
-  } else {
-    menuDropdown.classList.remove('open');
-    menuDropdown.classList.add('close');
-    menuOpen = false;
   }
 })
 
-
+menuDropdown.addEventListener('click', () => {
+  if (menuOpen) {
+    menuDropdown.classList.remove('close');
+    menuDropdown.classList.add('close'); 
+    menuOpen = false;
+  } 
+})
 
