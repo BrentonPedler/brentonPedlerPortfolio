@@ -52,10 +52,10 @@ $(".portfolioLink").click(function() {
 //   }
 // })
 
-$('.fa-bars').on('click', () => {
+$('.fa-bars').on('click', function() {
   addClass('open');
 });
 
-$( '.menu a' ).on("click", () => {
+$('.dropdown li a').on("click", function() {
   removeClass('open');
 });
