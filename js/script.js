@@ -37,18 +37,42 @@ $(".portfolioLink").click(function() {
 
 // CLICK EVENT FOR HAMBURGER MENU
 
-const menuDropdown = document.querySelector('.fa-bars');
+// const menuDropdown = document.querySelector('.fa-bars');
 
-let menuOpen = false;
+// let menuOpen = false;
 
-menuDropdown.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuDropdown.classList.add('open'); 
-    menuOpen = true;
-  } else {
-    menuDropdown.classList.remove('open').add('close');
-    menuOpen = false;
+// menuDropdown.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     menuDropdown.classList.add('open'); 
+//     menuOpen = true;
+//   } else {
+//     menuDropdown.classList.remove('open');
+//     menuOpen = false;
+//   }
+// })
+
+const html = document.documentElement;
+const menu = document.getElementById('topNav')
+
+const openMenu = () => {
+  menu.classList.add('open');
+  html.addEventListener('click', closeMenuOnBodyClick);
+}
+
+const  closeMenu = () => {
+  menu.classList.remove('open');
+  html.removeEventListener('click', closeMenuOnBodyClick);
+}
+
+const closeMenuOnBodyClick = () => {
+  const path = event.composedPath();
+  
+  if (path.some(elem => elem.id === 'topNav')) {
+
+    return;
   }
-})
+  closeMenu();
+}
+
 
 
