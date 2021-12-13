@@ -98,45 +98,54 @@
 }
 
 @media (max-width: 815px) {
-    .navFlex {
+    .topNav {
+        .navFlex {
         
-        .fa-bars {
+            .fa-bars {
             display: inline-block;
             font-size: 5rem;
-        }   ul {
-            display: none;
+            }   
+                ul {
+                    display: none;
+                }
         }
     }
 
-    .navFlex.active, .navFlex:focus {
+    .topNav {
+        .navFlex, .navFlex:focus {
 
-        .fa-bars {
-            display: inline-block;
-            font-size: 5rem;
-            position: relative;
+            .fa-bars {
+                display: inline-block;
+                font-size: 5rem;
+                position: relative;
 
-        }   ul {
-            display: inline-block;
-            position: absolute;
-            overflow: hidden;
-            text-align: center;
-            right: 50px;
-            top: 90px;
+            }  .dropdown {
+                display: none;
+            }
+               .dropdown.active {
+                display: inline-block;
+                position: absolute;
+                overflow: hidden;
+                text-align: center;
+                right: 50px;
+                top: 90px;
+                transition: 0.3s;
 
             }   li {
-                background-color: $primaryDark;
-                padding: 10px;
-                color: $primaryLight;
+                    background-color: $primaryDark;
+                    padding: 10px;
+                    color: $primaryLight;
 
-                }   li:hover, li:focus {
-                    background-color: $primaryOrange;
-                    
-                        a:hover, a:focus {
-                            color: $primaryLight;
-                        }
-                    
-                    }         
+                    }   li:hover, li:focus {
+                        background-color: $primaryOrange;
+                        
+                            a:hover, a:focus {
+                                color: $primaryLight;
+                            }
+                        
+                        }         
 
+    }
     }
 }
 

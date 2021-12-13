@@ -37,54 +37,17 @@ $(".portfolioLink").click(function() {
 
 // CLICK EVENT FOR HAMBURGER MENU
 
-// const menuDropdown = document.querySelector('.fa-bars');
-// const menuItems = document.querySelectorAll('.item');
-
-// let menuOpen = false;
-
-// menuDropdown.addEventListener('click', () => {
-//   if (!menuOpen) {
-//     menuDropdown.classList.add('open'); 
-//     menuOpen = true;
-//   }
-// })
-
-// menuDropdown.addEventListener('click', () => {
-//     menuItems.classList.remove('open');
-//     menuOpen = false;
-// })
-
-// menuDropdown.addEventListener('click', () => {
-//   if (menuDropdown.style.display != 'hidden') {
-//     menuDropdown.style.display = 'hidden';
-//   } else {
-//     menuDropdown.style.display = 'inline-block';
-//   }
-// })
-
-
-
-// const burgerMenu = document.querySelector(’.burger’);
-// burgerMenu.addEventListener(‘click’, () => {
-// const navlinks = document.querySelector(’.nav-links’);
-// if(navlinks.style.transform != “translateX(0%)”) {
-// navlinks.style.transform = “translateX(0%)”;
-// } else {
-// navlinks.style.transform = “translateX(100%)”;
-// }
-// })
-
 const hamburger = document.querySelector('.fa-bars');
 const menu = document.querySelector('.dropdown');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
   menu.classList.toggle('active');
+  console.log("click");
 })
 
 document.querySelectorAll('.item').forEach(e => e.addEventListener('click', () => {
-  hamburger.classList.remove('active');
   menu.classList.remove('active');
+  console.log("click");
 }))
 
 

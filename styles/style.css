@@ -874,36 +874,41 @@ footer {
   }
 }
 @media (max-width: 815px) {
-  .navFlex .fa-bars {
+  .topNav .navFlex .fa-bars {
     display: inline-block;
     font-size: 5rem;
   }
-  .navFlex ul {
+  .topNav .navFlex ul {
     display: none;
   }
 
-  .navFlex.active .fa-bars, .navFlex:focus .fa-bars {
+  .topNav .navFlex .fa-bars, .topNav .navFlex:focus .fa-bars {
     display: inline-block;
     font-size: 5rem;
     position: relative;
   }
-  .navFlex.active ul, .navFlex:focus ul {
+  .topNav .navFlex .dropdown, .topNav .navFlex:focus .dropdown {
+    display: none;
+  }
+  .topNav .navFlex .dropdown.active, .topNav .navFlex:focus .dropdown.active {
     display: inline-block;
     position: absolute;
     overflow: hidden;
     text-align: center;
     right: 50px;
     top: 90px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
-  .navFlex.active li, .navFlex:focus li {
+  .topNav .navFlex li, .topNav .navFlex:focus li {
     background-color: #000000;
     padding: 10px;
     color: #F7F7F7;
   }
-  .navFlex.active li:hover, .navFlex.active li:focus, .navFlex:focus li:hover, .navFlex:focus li:focus {
+  .topNav .navFlex li:hover, .topNav .navFlex li:focus, .topNav .navFlex:focus li:hover, .topNav .navFlex:focus li:focus {
     background-color: #F58840;
   }
-  .navFlex.active li:hover a:hover, .navFlex.active li:hover a:focus, .navFlex.active li:focus a:hover, .navFlex.active li:focus a:focus, .navFlex:focus li:hover a:hover, .navFlex:focus li:hover a:focus, .navFlex:focus li:focus a:hover, .navFlex:focus li:focus a:focus {
+  .topNav .navFlex li:hover a:hover, .topNav .navFlex li:hover a:focus, .topNav .navFlex li:focus a:hover, .topNav .navFlex li:focus a:focus, .topNav .navFlex:focus li:hover a:hover, .topNav .navFlex:focus li:hover a:focus, .topNav .navFlex:focus li:focus a:hover, .topNav .navFlex:focus li:focus a:focus {
     color: #F7F7F7;
   }
 }
