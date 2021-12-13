@@ -108,7 +108,7 @@
         }
     }
 
-    .navFlex:hover, .navFlex:focus {
+    .navFlex.active, .navFlex:focus {
 
         .fa-bars {
             display: inline-block;

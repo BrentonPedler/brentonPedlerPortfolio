@@ -390,31 +390,6 @@ header button:hover {
   display: none;
 }
 
-.fa-bars.active {
-  display: inline-block;
-  font-size: 5rem;
-  position: relative;
-}
-.fa-bars.active ul {
-  display: inline-block;
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  right: 50px;
-  top: 90px;
-}
-.fa-bars.active li {
-  background-color: #000000;
-  padding: 10px;
-  color: #F7F7F7;
-}
-.fa-bars.active li:hover, .fa-bars.active li:focus {
-  background-color: #F58840;
-}
-.fa-bars.active li:hover a:hover, .fa-bars.active li:hover a:focus, .fa-bars.active li:focus a:hover, .fa-bars.active li:focus a:focus {
-  color: #F7F7F7;
-}
-
 .aboutMe {
   background-color: #F7F7F7;
   color: #000000;
@@ -907,12 +882,12 @@ footer {
     display: none;
   }
 
-  .navFlex:hover .fa-bars, .navFlex:focus .fa-bars {
+  .navFlex.active .fa-bars, .navFlex:focus .fa-bars {
     display: inline-block;
     font-size: 5rem;
     position: relative;
   }
-  .navFlex:hover ul, .navFlex:focus ul {
+  .navFlex.active ul, .navFlex:focus ul {
     display: inline-block;
     position: absolute;
     overflow: hidden;
@@ -920,15 +895,15 @@ footer {
     right: 50px;
     top: 90px;
   }
-  .navFlex:hover li, .navFlex:focus li {
+  .navFlex.active li, .navFlex:focus li {
     background-color: #000000;
     padding: 10px;
     color: #F7F7F7;
   }
-  .navFlex:hover li:hover, .navFlex:hover li:focus, .navFlex:focus li:hover, .navFlex:focus li:focus {
+  .navFlex.active li:hover, .navFlex.active li:focus, .navFlex:focus li:hover, .navFlex:focus li:focus {
     background-color: #F58840;
   }
-  .navFlex:hover li:hover a:hover, .navFlex:hover li:hover a:focus, .navFlex:hover li:focus a:hover, .navFlex:hover li:focus a:focus, .navFlex:focus li:hover a:hover, .navFlex:focus li:hover a:focus, .navFlex:focus li:focus a:hover, .navFlex:focus li:focus a:focus {
+  .navFlex.active li:hover a:hover, .navFlex.active li:hover a:focus, .navFlex.active li:focus a:hover, .navFlex.active li:focus a:focus, .navFlex:focus li:hover a:hover, .navFlex:focus li:hover a:focus, .navFlex:focus li:focus a:hover, .navFlex:focus li:focus a:focus {
     color: #F7F7F7;
   }
 }
