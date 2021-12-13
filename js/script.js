@@ -40,19 +40,37 @@ $(".portfolioLink").click(function() {
 const menuDropdown = document.querySelector('.fa-bars');
 const menuItems = document.querySelectorAll('.item');
 
-let menuOpen = false;
+// let menuOpen = false;
+
+// menuDropdown.addEventListener('click', () => {
+//   if (!menuOpen) {
+//     menuDropdown.classList.add('open'); 
+//     menuOpen = true;
+//   }
+// })
+
+// menuDropdown.addEventListener('click', () => {
+//     menuItems.classList.remove('open');
+//     menuOpen = false;
+// })
 
 menuDropdown.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuDropdown.classList.add('open'); 
-    menuOpen = true;
+  if (menuDropdown.style.display != 'hidden') {
+    menuDropdown.style.display = 'hidden';
+  } else {
+    menuDropdown.style.display = 'inline-block';
   }
 })
 
-menuDropdown.addEventListener('click', () => {
-  if (menuOpen) {
-    menuItems.classList.remove('open');
-    menuOpen = false;
-  }
-})
+
+
+// const burgerMenu = document.querySelector(’.burger’);
+// burgerMenu.addEventListener(‘click’, () => {
+// const navlinks = document.querySelector(’.nav-links’);
+// if(navlinks.style.transform != “translateX(0%)”) {
+// navlinks.style.transform = “translateX(0%)”;
+// } else {
+// navlinks.style.transform = “translateX(100%)”;
+// }
+// })
 
