@@ -390,12 +390,12 @@ header button:hover {
   display: none;
 }
 
-.fa-bars.open {
+.fa-bars.active {
   display: inline-block;
   font-size: 5rem;
   position: relative;
 }
-.fa-bars.open ul {
+.fa-bars.active ul {
   display: inline-block;
   position: absolute;
   overflow: hidden;
@@ -403,20 +403,16 @@ header button:hover {
   right: 50px;
   top: 90px;
 }
-.fa-bars.open li {
+.fa-bars.active li {
   background-color: #000000;
   padding: 10px;
   color: #F7F7F7;
 }
-.fa-bars.open li:hover, .fa-bars.open li:focus {
+.fa-bars.active li:hover, .fa-bars.active li:focus {
   background-color: #F58840;
 }
-.fa-bars.open li:hover a:hover, .fa-bars.open li:hover a:focus, .fa-bars.open li:focus a:hover, .fa-bars.open li:focus a:focus {
+.fa-bars.active li:hover a:hover, .fa-bars.active li:hover a:focus, .fa-bars.active li:focus a:hover, .fa-bars.active li:focus a:focus {
   color: #F7F7F7;
-}
-
-.fa-bars.close {
-  display: none;
 }
 
 .aboutMe {

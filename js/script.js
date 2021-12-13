@@ -37,8 +37,8 @@ $(".portfolioLink").click(function() {
 
 // CLICK EVENT FOR HAMBURGER MENU
 
-const menuDropdown = document.querySelector('.fa-bars');
-const menuItems = document.querySelectorAll('.item');
+// const menuDropdown = document.querySelector('.fa-bars');
+// const menuItems = document.querySelectorAll('.item');
 
 // let menuOpen = false;
 
@@ -54,13 +54,13 @@ const menuItems = document.querySelectorAll('.item');
 //     menuOpen = false;
 // })
 
-menuDropdown.addEventListener('click', () => {
-  if (menuDropdown.style.display != 'hidden') {
-    menuDropdown.style.display = 'hidden';
-  } else {
-    menuDropdown.style.display = 'inline-block';
-  }
-})
+// menuDropdown.addEventListener('click', () => {
+//   if (menuDropdown.style.display != 'hidden') {
+//     menuDropdown.style.display = 'hidden';
+//   } else {
+//     menuDropdown.style.display = 'inline-block';
+//   }
+// })
 
 
 
@@ -73,4 +73,19 @@ menuDropdown.addEventListener('click', () => {
 // navlinks.style.transform = “translateX(100%)”;
 // }
 // })
+
+const hamburger = document.querySelector('.fa-bars');
+const menu = document.querySelector('.dropdown');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+})
+
+document.querySelectorAll('.item').forEach(e => e.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  menu.classList.remove('active');
+}))
+
+
 
