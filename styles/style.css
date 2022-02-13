@@ -551,6 +551,63 @@ header button:hover {
   border-bottom: 2px solid #B85252;
 }
 
+.projectCarousel {
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > .projectBox {
+  width: 100%;
+  height: 100%;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.carouselButton {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carouselButton:hover,
+.carouselButton:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carouselButton:focus {
+  outline: 1px solid black;
+}
+
+.carouselButton.prev {
+  left: 1rem;
+}
+
+.carouselButton.next {
+  right: 1rem;
+}
+
 .projectBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,105 +692,18 @@ header button:hover {
   letter-spacing: 4px;
   font-size: 3rem;
   padding: 20px 0px;
-}
-
-.contactFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.contactFlex form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  border: 1px solid #F7F7F7;
-  border-radius: 10px;
-  padding: 25px;
-  width: 60%;
-}
-.contactFlex .formLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 80%;
-}
-.contactFlex input[type=text] {
-  background-color: #F7F7F7;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 4px;
-  font-size: 1.6rem;
-  border: none;
-  margin: 30px;
-  padding: 15px 5px;
-  width: 100%;
-}
-.contactFlex textarea {
-  border: none;
-  resize: none;
-  margin-left: 50px;
-  width: 85%;
-  height: 60%;
-  padding: 15px 5px;
-  background-color: #F7F7F7;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 4px;
-  font-size: 1.6rem;
-}
-
-form button {
-  font-family: "Bree Serif", serif;
-  font-weight: 100;
-  letter-spacing: 3px;
-  background-color: #F7F7F7;
-  font-size: 1.6rem;
-  padding: 10px 30px;
-  border: none;
-  margin-top: 30px;
-  margin-left: 50px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #F58840;
-  cursor: pointer;
+  text-align: center;
 }
 
 .contactLinks {
   font-family: "Nunito", sans-serif;
   letter-spacing: 4px;
   margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.contactLinks li {
+
+.contactLinks > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,18 +711,27 @@ form button:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.contactLinks i {
+
+.fa-envelope-square, .fa-twitter, .fa-linkedin-in {
   font-size: 4rem;
   margin: 30px 0px;
 }
-.contactLinks a:hover {
+
+.contactLinks > li > a:hover {
   color: #F58840;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
-.contactLinks div {
+
+.contactLinks > li > div {
   margin-left: 25px;
   font-size: 1.2rem;
+}
+
+.contactLinks > li > div:hover {
+  color: #F58840;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 footer {
