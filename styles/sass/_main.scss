@@ -166,7 +166,7 @@
 .portfolio {
     background-color: $primaryLight;
     color: $primaryDark;
-    padding: 50px 0px;
+    padding-top: 50px;
 
         h2 {
             @include primaryFont();
@@ -182,7 +182,7 @@
 
 .projectCarousel {
     // width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -190,8 +190,7 @@
     position: absolute;
     inset: 0;
     opacity: 0;
-    // transition: 200ms opacity ease-in-out;
-    // transition-delay: 200ms;
+    transition: 100ms;
 }
 
 .slide > .projectBox {
@@ -240,7 +239,7 @@
 
 .projectBox {
     @include centerFlex();
-    padding: 50px;
+    // padding: 50px;
 
     .previewBox {
         width: 500px;
@@ -297,77 +296,23 @@
 .contact {
     background-color: $primaryDark;
     color: $primaryLight;
-    padding: 100px 0px 150px 0px;
+    padding: 75px 0px;
 }
 
 .contactTitle {
     @include primaryFont();
     font-size: 3rem;
-    padding: 20px 0px;
+    padding-bottom: 20px;
     text-align: center;
 }
-
-// .contactFlex {
-//     @include centerFlex();
-//     justify-content: flex-start;
-
-//     form {
-//         @include centerFlex();
-//         justify-content: flex-start;
-//         border: 1px solid $primaryLight;
-//         border-radius: 10px;
-//         padding: 25px;
-//         width: 60%;
-//     } 
-//         .formLeft {
-//             @include centerFlex();
-//             flex-direction: column;
-//             width: 80%; 
-//         } 
-//             input[type=text] {
-//                 background-color: $primaryLight;
-//                 @include primaryFont();
-//                 font-size: 1.6rem;
-//                 border: none;
-//                 margin: 30px;
-//                 padding: 15px 5px;
-//                 width: 100%;
-//             }
-//                 textarea {
-//                     border: none;
-//                     resize: none;
-//                     margin-left: 50px;
-//                     width: 85%;
-//                     height: 60%;
-//                     padding: 15px 5px;
-//                     background-color: $primaryLight;
-//                     @include primaryFont();
-//                     font-size: 1.6rem;
-//                 }
-// }
-
-// form button {
-//     @include secondaryFont();
-//     background-color: $primaryLight;
-//     font-size: 1.6rem;
-//     padding: 10px 30px;
-//     border: none;
-//     margin-top: 30px;
-//     margin-left: 50px;
-//     transition: 1s;
-//     cursor: pointer;
-// }
-
-// form button:hover {
-//     background-color: $primaryOrange;
-//     cursor: pointer;
-// }
 
 .contactLinks {
     @include primaryFont();
     margin-left: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include centerFlex();
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .contactLinks > li {
