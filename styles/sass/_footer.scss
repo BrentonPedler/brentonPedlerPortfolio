@@ -1,12 +1,12 @@
 footer {
-    background-color: $primaryLight;
-    color: $primaryRed;
+    background-color: $primaryDark;
+    color: $primaryLight;
     @include primaryFont();
-    font-size: 2rem;
-    height: 5vh;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
 .footerText {
-    @include centerFlex();
-    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
 }
