@@ -1,25 +1,8 @@
-@media (max-width: 1250px) {
-    .contactFlex {
-
-        form {
-            flex-direction: column;
-
-            textarea {
-                margin-left: 10%;
-                width: 80%;
-                height: 60%; 
-            }
-            
-        }
-    }
-    form button {
-        padding: 10px 30px;
-        margin-top: 5%;
-        margin-left: 10%;
+@media (max-width: 1285px) {
+    .projectBox > .previewBox {
+        width: 400px;
     }
 }
-
-
 
 @media (max-width: 1200px) {
     .skills {
@@ -41,13 +24,11 @@
 
         }
     }
-    .previewBox {
-        width: 400px;
+    .projectBox > .previewBox {
+        width: 300px;
         height: 300px;
     }
-    .projectInfo {
-        width: 60%;
-    }
+
 }
 
 @media (max-width: 1000px) {
@@ -57,45 +38,21 @@
             width: 100%;
         }
     }
-    .contact {
-        padding: 100px 0px;
-    }
-    .contactTitle {
-        text-align: center;
-    }
-
-    .contactFlex {
-        flex-direction: column;
-    }
-    .contactLinks {
-        margin: 20px 0px;
-    }
 }
 
-@media (max-width: 968px) {
-    
+@media (max-width: 900px) {
     .projectBox {
         flex-direction: column;
-        padding: 25px;
-        
-        .order {
-            order: 1;
-
-            .orderTwo {
-                order: -1;
-            }
-        }
-
-
     }
     .projectInfo {
         text-align: center;
-
-        .tools {
-            margin: 0 auto;
-        }
+        width: 60%;
+    }
+    .tools {
+        width: 100%;
     }
 }
+
 
 @media (max-width: 815px) {
     .topNav {
@@ -163,29 +120,9 @@
     header h1 {
         padding: 30px 0px;
     }
-
-    .projectBox {
-        padding: 50px 0px;
-    }
-
-    .projectInfo {
-        width: 80%;
-        margin: 25px 0px;
-    }
-    .contactFlex {
-        form {
-            width: 100%;
-        }
-    }
 }
 
-@media (max-width: 659px) {
-    footer {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 642px) {
+@media (max-width: 650px) {
     header h1 {
         text-align: center;
     }
@@ -199,22 +136,12 @@
             width: 100%;
         }
     }
-}
-
-@media (max-width: 550px) {
-    .projectBox {
-        .previewBox {
-            width: 400px;
-            height: 300px;
-        }
+    .projectInfo > .title {
+        font-size: 2rem;
     }
-    footer {
-        font-size: 1rem;
+    .carouselButton {
+        top: 95%;
     }
-    .projectInfo {
-        width: 100%;
-    }
-    
 }
 
 @media (max-width: 500px) {
@@ -229,24 +156,16 @@
                 }
         }
     }
-}
-
-@media (max-width: 435px) {
-    .projectBox {
-        .previewBox {
-            width: 300px;
-            height: 275px;
-        }
+    .projectInfo {
+        width: 80%;
     }
-    .contactFlex {
-        form {
-            padding: 5px;
-        }
+    .contactLinks {
+        justify-content: space-between;
+        margin: 0;
     }
-    footer {
-        text-align: center;
+    .fa-envelope-square, .fa-twitter, .fa-linkedin-in {
+        font-size: 6rem;
     }
-
 }
 
 @media (max-width: 400px) {
@@ -257,15 +176,15 @@
             height: 425px;
         }
     }
-}
-
-@media (max-width: 385px) {
     .projectInfo {
-        .title {
-            font-size: 2rem;
-        }
+        width: 100%;
+    }
+    .contactLinks {
+        justify-content: center;
+        gap: 10px;
     }
 }
+
 
 @media (max-width: 375px) {
     header h1 {
@@ -276,31 +195,6 @@
     }
     header p {
        font-size: 1.2rem; 
-    }
-    .contactTitle {
-        font-size: 2rem;
-    }
-    .contactLinks {
-        margin-left: 0px;
-    
-            li {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            } 
-                i {
-                    font-size: 4rem;
-                    margin: 30px 0px;
-                }
-                    a:hover {
-                        color: $primaryOrange;
-                        transition: 1s;
-                    }
-    
-                    div {
-                        margin-left: 0px;
-                        font-size: 1.2rem;
-                    }
     }
 }
 

@@ -3,9 +3,10 @@ footer {
     color: $primaryLight;
     @include primaryFont();
     font-size: 1rem;
-    height: 100%;
+    overflow: hidden;
 }
 
 .footerText {
     text-align: center;
+    padding: 10px;
 }

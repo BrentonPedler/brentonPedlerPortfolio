@@ -181,7 +181,6 @@
 }
 
 .projectCarousel {
-    // width: 100vw;
     height: 80vh;
     position: relative;
 }
@@ -212,11 +211,11 @@
     font-size: 4rem;
     top: 50%;
     transform: translateY(-50%); 
-    color: rgba(255, 255, 255, .5);
+    color: $primaryLight;
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: $primaryDark;
  }
  
  .carouselButton:hover,
@@ -239,12 +238,11 @@
 
 .projectBox {
     @include centerFlex();
-    // padding: 50px;
 
     .previewBox {
         width: 500px;
         height: 400px;
-        border: 6px solid $primaryDark;
+        border: 2px solid $primaryDark;
         border-radius: 5px;
     }
         .previewBox img {
@@ -291,7 +289,7 @@
         }
 }
 
-// FORM
+// CONTACT
 
 .contact {
     background-color: $primaryDark;
@@ -299,69 +297,18 @@
     padding: 75px 0px;
 }
 
-.contactTitle {
-    @include primaryFont();
-    font-size: 3rem;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 .contactLinks {
     @include primaryFont();
-    margin-left: 50px;
-    @include centerFlex();
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.contactLinks > li {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
 }
 
 .fa-envelope-square, .fa-twitter, .fa-linkedin-in {
-    font-size: 4rem;
-    margin: 30px 0px;
+    font-size: 8rem;
 }
 
 .contactLinks > li > a:hover {
     color: $primaryOrange;
     transition: 500ms;
 }
-
-.contactLinks > li > div {
-    margin-left: 25px;
-    font-size: 1.2rem;
-}
-
-.contactLinks > li > div:hover {
-    color: $primaryOrange;
-    transition: 500ms;
-}
-
-
-
-// .contactLinks {
-//     @include primaryFont();
-//     margin-left: 50px;
-//     display: flex;
-
-//         li {
-//             display: flex;
-//             align-items: center;
-//         } 
-//             i {
-//                 font-size: 4rem;
-//                 margin: 30px 0px;
-//             }
-//                 a:hover {
-//                     color: $primaryOrange;
-//                     transition: 1s;
-//                 }
-
-//                 div {
-//                     margin-left: 25px;
-//                     font-size: 1.2rem;
-//                 }
-// }

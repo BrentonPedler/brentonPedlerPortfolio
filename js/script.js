@@ -42,12 +42,10 @@ const menu = document.querySelector('.dropdown');
 
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
-  console.log("click");
 })
 
 document.querySelectorAll('.item').forEach(e => e.addEventListener('click', () => {
   menu.classList.remove('active');
-  console.log("click");
 }))
 
 // PROJECT CAROUSEL

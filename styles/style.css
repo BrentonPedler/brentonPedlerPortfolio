@@ -266,10 +266,10 @@ img {
 
 header {
   background-color: #000000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 30, 31, 0.52)), to(rgba(33, 32, 33, 0.73))), url("../assets/Brenton_4copy.jpg");
-  background-image: linear-gradient(to bottom, rgba(29, 30, 31, 0.52), rgba(33, 32, 33, 0.73)), url("../assets/Brenton_4copy.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 30, 31, 0.52)), to(rgba(33, 32, 33, 0.73))), url("../assets/IMG_6717.JPG");
+  background-image: linear-gradient(to bottom, rgba(29, 30, 31, 0.52), rgba(33, 32, 33, 0.73)), url("../assets/IMG_6717.JPG");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #F7F7F7;
@@ -585,11 +585,11 @@ header button:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
+  color: #F7F7F7;
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #000000;
 }
 
 .carouselButton:hover,
@@ -624,7 +624,7 @@ header button:hover {
 .projectBox .previewBox {
   width: 500px;
   height: 400px;
-  border: 6px solid #000000;
+  border: 2px solid #000000;
   border-radius: 5px;
 }
 .projectBox .previewBox img {
@@ -688,56 +688,22 @@ header button:hover {
   padding: 75px 0px;
 }
 
-.contactTitle {
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 4px;
-  font-size: 3rem;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 .contactLinks {
   font-family: "Nunito", sans-serif;
   letter-spacing: 4px;
-  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 25px;
-}
-
-.contactLinks > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 100px;
 }
 
 .fa-envelope-square, .fa-twitter, .fa-linkedin-in {
-  font-size: 4rem;
-  margin: 30px 0px;
+  font-size: 8rem;
 }
 
 .contactLinks > li > a:hover {
-  color: #F58840;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.contactLinks > li > div {
-  margin-left: 25px;
-  font-size: 1.2rem;
-}
-
-.contactLinks > li > div:hover {
   color: #F58840;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -749,30 +715,17 @@ footer {
   font-family: "Nunito", sans-serif;
   letter-spacing: 4px;
   font-size: 1rem;
-  height: 100%;
+  overflow: hidden;
 }
 
 .footerText {
   text-align: center;
+  padding: 10px;
 }
 
-@media (max-width: 1250px) {
-  .contactFlex form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactFlex form textarea {
-    margin-left: 10%;
-    width: 80%;
-    height: 60%;
-  }
-
-  form button {
-    padding: 10px 30px;
-    margin-top: 5%;
-    margin-left: 10%;
+@media (max-width: 1285px) {
+  .projectBox > .previewBox {
+    width: 400px;
   }
 }
 @media (max-width: 1200px) {
@@ -793,63 +746,31 @@ footer {
     margin: 35px 0px;
   }
 
-  .previewBox {
-    width: 400px;
+  .projectBox > .previewBox {
+    width: 300px;
     height: 300px;
-  }
-
-  .projectInfo {
-    width: 60%;
   }
 }
 @media (max-width: 1000px) {
   .skills ul {
     width: 100%;
   }
-
-  .contact {
-    padding: 100px 0px;
-  }
-
-  .contactTitle {
-    text-align: center;
-  }
-
-  .contactFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .contactLinks {
-    margin: 20px 0px;
-  }
 }
-@media (max-width: 968px) {
+@media (max-width: 900px) {
   .projectBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 25px;
-  }
-  .projectBox .order {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .projectBox .order .orderTwo {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
   }
 
   .projectInfo {
     text-align: center;
+    width: 60%;
   }
-  .projectInfo .tools {
-    margin: 0 auto;
+
+  .tools {
+    width: 100%;
   }
 }
 @media (max-width: 815px) {
@@ -901,26 +822,8 @@ footer {
   header h1 {
     padding: 30px 0px;
   }
-
-  .projectBox {
-    padding: 50px 0px;
-  }
-
-  .projectInfo {
-    width: 80%;
-    margin: 25px 0px;
-  }
-
-  .contactFlex form {
-    width: 100%;
-  }
 }
-@media (max-width: 659px) {
-  footer {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 642px) {
+@media (max-width: 650px) {
   header h1 {
     text-align: center;
   }
@@ -935,19 +838,13 @@ footer {
   .aboutMe .wrapper {
     width: 100%;
   }
-}
-@media (max-width: 550px) {
-  .projectBox .previewBox {
-    width: 400px;
-    height: 300px;
+
+  .projectInfo > .title {
+    font-size: 2rem;
   }
 
-  footer {
-    font-size: 1rem;
-  }
-
-  .projectInfo {
-    width: 100%;
+  .carouselButton {
+    top: 95%;
   }
 }
 @media (max-width: 500px) {
@@ -958,19 +855,20 @@ footer {
   .skills ul i {
     font-size: 10rem;
   }
-}
-@media (max-width: 435px) {
-  .projectBox .previewBox {
-    width: 300px;
-    height: 275px;
+
+  .projectInfo {
+    width: 80%;
   }
 
-  .contactFlex form {
-    padding: 5px;
+  .contactLinks {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
   }
 
-  footer {
-    text-align: center;
+  .fa-envelope-square, .fa-twitter, .fa-linkedin-in {
+    font-size: 6rem;
   }
 }
 @media (max-width: 400px) {
@@ -978,10 +876,16 @@ footer {
     width: 300px;
     height: 425px;
   }
-}
-@media (max-width: 385px) {
-  .projectInfo .title {
-    font-size: 2rem;
+
+  .projectInfo {
+    width: 100%;
+  }
+
+  .contactLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
   }
 }
 @media (max-width: 375px) {
@@ -994,37 +898,6 @@ footer {
   }
 
   header p {
-    font-size: 1.2rem;
-  }
-
-  .contactTitle {
-    font-size: 2rem;
-  }
-
-  .contactLinks {
-    margin-left: 0px;
-  }
-  .contactLinks li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .contactLinks i {
-    font-size: 4rem;
-    margin: 30px 0px;
-  }
-  .contactLinks a:hover {
-    color: #F58840;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .contactLinks div {
-    margin-left: 0px;
     font-size: 1.2rem;
   }
 }
