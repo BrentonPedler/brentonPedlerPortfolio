@@ -777,7 +777,7 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 832px) {
   .topNav .navFlex .fa-bars {
     display: inline-block;
     font-size: 5rem;
