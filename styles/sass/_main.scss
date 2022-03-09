@@ -51,7 +51,8 @@
                 height: 500px;
                 object-fit: cover;
                 border-radius: 5px;
-                filter: opacity(70%) grayscale(50%);
+                filter: opacity(80%) grayscale(10%);
+                box-shadow: 20px 20px 20px 10px #c7c6c6;
                 }
 }
 
@@ -71,7 +72,8 @@
             p {
                 @include secondaryFont;
                 font-size: 1.8rem;  
-                line-height: 2.5rem;    
+                line-height: 2.5rem; 
+                letter-spacing: 3px;   
             }
 }
 
@@ -294,6 +296,7 @@
     background-color: $primaryDark;
     color: $primaryLight;
     padding: 75px 0px;
+    // height: 30vh;
 }
 
 .contactLinks {
